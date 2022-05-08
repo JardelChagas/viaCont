@@ -1,0 +1,36 @@
+<header>
+    <img class="logo" src="../../static/images/logo.png" alt="logo">
+    <nav id="nav">
+        <ul class="nav__links">
+            {% if(title=="ViaConte") %}
+                <li><a class="active" href="/" >HOME</a></li>
+            {% else %}
+                <li><a href="/" >HOME</a></li>
+            {% endif %}
+
+            {% if(title=="Quem somos") %}
+                <li><a class="active" href="/quemsomos">QUEM SOMOS</a></li>
+            {% else %}
+                <li><a href="/quemsomos">QUEM SOMOS</a></li>
+            {% endif %}
+
+            {% if(title=="Serviços") %}
+                <li><a class="active" href="/servicos">SERVIÇOS</a></li>
+            {% else %}
+                <li><a href="/servicos">SERVIÇOS</a></li>
+            {% endif %}
+
+            {% if(title=="Blog") %}
+                <li><a class="active" href="/blog">BLOG</a></li>
+            {% else %}
+                <li><a href="/blog">BLOG</a></li>
+            {% endif %}
+
+            {% if(title=="Entre em contato") %}
+                <li><a class="active" href="/entreEmContato">ENTRE EM CONTATO</a></li>
+            {% else %}
+                <li><a href="/entreEmContato">ENTRE EM CONTATO</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+</header>
