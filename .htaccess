@@ -1,4 +1,4 @@
 AddHandler fcgid-script .fcgi
 RewriteEngine On
-RewriteCond %{app} !-f
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$ app.fcgi/$1 [QSA,L]
