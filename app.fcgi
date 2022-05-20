@@ -2,7 +2,7 @@
 
 from flup.server.fcgi import WSGIServer
 import sys
-#sys.path.insert(0, 'env/lib/python2.6/site-packages')
+sys.path.insert(0, 'env/lib/python3.10/site-packages')
 
 from app import app
 
