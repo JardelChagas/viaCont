@@ -31,6 +31,7 @@
     .logo{
         width: 200px;
     }
+
 }
 @media (min-width: 336px) and (max-width: 792px) {
     .logo,
@@ -38,7 +39,7 @@
         display: none;
     }
     .nav__list {
-        position: absolute;
+        position: fixed;
         bottom: 2rem;
         box-shadow: 0 8px 24px hsla(228, 81%, 24%, .15);
         width: 90%;
@@ -61,6 +62,10 @@
     header{
         z-index: 100;
     }
+    #lastSection{
+        margin-bottom:50px;
+        background: var(--cinzaescuro);
+    }
 }
 @media (max-width: 335px) {
     .logo,
@@ -68,7 +73,7 @@
         display: none;
     }
     .nav__list {
-        position: absolute;
+        position: fixed;
         bottom: 2rem;
         box-shadow: 0 8px 24px hsla(228, 81%, 24%, .15);
         width: 90%;
@@ -101,13 +106,126 @@
 /*-----------------------------------Menu-----------------------------------*/
 
 /*-----------------------------------rodapé-----------------------------------*/
-@media screen and (min-width: 793px){
-
+#lastSection p{
+    color: #fff;
 }
-@media (min-width: 336px) and (max-width: 792px){
 
+@media screen and (min-width: 1200px){
+    .redes_sociais{
+        display: flex;
+        position: absolute;
+        column-gap: 20px;
+
+    }
+    .incons_sociais a{
+        font-size: 20px;
+        color: var(--black);
+    }
+    #logo_footer{
+        padding-top: 150px;
+    }
+    #logo_footer img{
+        width: 175px;
+    }
+    .container{
+        padding: 75px 0px;
+
+    }
+
+    .row{
+        column-gap: 50px;
+    }
+    #foot_mais_infor{
+        width: 260px;
+    }
+    #lastSection{
+        text-align: center;
+        padding: 50px 0px;
+        background: var(--red1);
+
+    }
+    #foot_end{
+        padding-top: 30px;
+        width: 330px;
+        text-align: left;
+        color: var(--cinzaescuro);
+    }
 }
-@media (max-width: 335px){
+@media (min-width: 768px) and (max-width: 1199px){
+ .redes_sociais{
+        display: flex;
+        position: absolute;
+        column-gap: 20px;
 
+    }
+    .incons_sociais a{
+        font-size: 20px;
+        color: var(--black);
+    }
+    #logo_footer{
+        padding-top: 150px;
+    }
+    #logo_footer img{
+        width: 175px;
+    }
+    .container{
+        padding: 75px 0px;
+    }
+
+    .row{
+        column-gap: 50px;
+    }
+    #foot_mais_infor{
+        width: 260px;
+    }
+    #entre_contato{
+        min-width: 355px;
+        max-width: 360px;
+    }
+
+    #lastSection{
+        text-align: center;
+        padding: 50px 0px;
+        background-color: var(--red1);
+    }
+    #foot_end{
+        padding-top: 30px;
+        width: 330px;
+        text-align: left;
+        color: var(--cinzaescuro);
+    }
+}
+@media (max-width: 767px){
+    .redes_sociais{
+        display: flex;
+        position: absolute;
+        column-gap: 20px;
+
+    }
+    .incons_sociais a{
+        font-size: 20px;
+        color: var(--black);
+    }
+    #logo_footer{
+        padding-top: 70px;
+    }
+    #logo_footer img{
+        width: 175px;
+    }
+    .mapouter{
+        padding-top: 30px;
+        justify-content: center;
+        position: center;
+    }
+
+    #lastSection{
+        margin-top: 60px;
+        text-align: center;
+        padding: 50px 0px;
+        background-color: var(--red1);
+    }
+    #foot_end{
+        display: none;
+    }
 }
 /*-----------------------------------rodapé-----------------------------------*/
