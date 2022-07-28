@@ -1,36 +1,67 @@
-<header>
-    <img class="logo" src="../../static/images/logo.png" alt="logo">
-    <nav id="nav">
-        <ul class="nav__links">
-            {% if(title=="ViaConte") %}
-                <li><a class="active" href="/" >HOME</a></li>
-            {% else %}
-                <li><a href="/" >HOME</a></li>
-            {% endif %}
+<header >
+    <div class="nav__logo">
+        <img class="logo" src="../../static/images/logo.png" alt="logo">
+    </div>
+    <div id="nav" class="nav__list" >
+        {% if(title=="ViaConte") %}
+            <a href="/" class="nav__link active-link ">
+                <span class="icon"><i class='bx bxs-home ' title="home" alt="home"></i></span>
+                <span class="nav__name">HOME</span>
+            </a>
+        {% else %}
+            <a href="/" class="nav__link ">
+                 <span class="icon"><i class='bx bxs-home' title="home" alt="home"></i></span>
+                <span class="nav__name ">HOME</span>
+            </a>
+        {% endif %}
 
-            {% if(title=="Quem somos") %}
-                <li><a class="active" href="/quemsomos">QUEM SOMOS</a></li>
-            {% else %}
-                <li><a href="/quemsomos">QUEM SOMOS</a></li>
-            {% endif %}
+        {% if(title=="Quem somos") %}
+            <a href="/quemsomos" class="nav__link active-link">
+                 <span class="icon"><i class='bx bxs-group' title="Quem somos" alt="Quem somos"></i></span>
+                <span class="nav__name ">QUEM SOMOS</span>
+            </a>
+        {% else %}
+            <a href="/quemsomos" class="nav__link">
+                 <span class="icon"><i class='bx bxs-group' title="Quem somos" alt="Quem somos"></i></span>
+                <span class="nav__name ">QUEM SOMOS</span>
+            </a>
+        {% endif %}
 
-            {% if(title=="Serviços") %}
-                <li><a class="active" href="/servicos">SERVIÇOS</a></li>
-            {% else %}
-                <li><a href="/servicos">SERVIÇOS</a></li>
-            {% endif %}
+        {% if(title=="Serviços") %}
+            <a href="/servicos" class="nav__link active-link">
+                 <span class="icon"><i class='bx bxs-cog' title="Serviços" alt="Serviços"></i></span>
+                <span class="nav__name ">SERVIÇOS</span>
+            </a>
+        {% else %}
+            <a href="/servicos" class="nav__link">
+                 <span class="icon"><i class='bx bxs-cog' title="Serviços" alt="Serviços"></i></span>
+                <span class="nav__name ">SERVIÇOS</span>
+            </a>
+        {% endif %}
 
-            {% if(title=="Blog") %}
-                <li><a class="active" href="/blog">BLOG</a></li>
-            {% else %}
-                <li><a href="/blog">BLOG</a></li>
-            {% endif %}
+        {% if(title=="Blog") %}
+            <a href="/blog" class="nav__link active-link">
+                 <span class="icon"><i class='bx bxs-spreadsheet' title="Blog" alt="Blog"></i></span>
+                <span class="nav__name ">BLOG</span>
+            </a>
+        {% else %}
+            <a href="/blog" class="nav__link">
+                 <span class="icon"><i class='bx bxs-spreadsheet' title="Blog" alt="Blog"></i></span>
+                <span class="nav__name ">BLOG</span>
+            </a>
+        {% endif %}
 
-            {% if(title=="Entre em contato") %}
-                <li><a class="active" href="/entreEmContato">ENTRE EM CONTATO</a></li>
-            {% else %}
-                <li><a href="/entreEmContato">ENTRE EM CONTATO</a></li>
-            {% endif %}
-        </ul>
-    </nav>
+        {% if(title=="Entre em contato") %}
+            <a href="/entreEmContato" class="nav__link active-link">
+                 <span class="icon"><i class='bx bxs-message-dots' title="Entre em contato" alt="Entre em contato"></i></span>
+                <span class="nav__name ">ENTRE EM CONTATO</span>
+            </a>
+        {% else %}
+            <a href="/entreEmContato" class="nav__link">
+                 <span class="icon"><i class='bx bxs-message-dots' title="Entre em contato" alt="Entre em contato"></i></span>
+                <span class="nav__name ">ENTRE EM CONTATO</span>
+            </a>
+        {% endif %}
+    </div>
 </header>
+
