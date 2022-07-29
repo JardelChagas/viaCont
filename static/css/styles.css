@@ -104,6 +104,34 @@
     color: var(--active-text);
 }
 /*-----------------------------------Menu-----------------------------------*/
+@media screen{
+    .paralax{
+        background-image: url("../../static/images/ViaConteBG.png");
+        padding: 230px 0px;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        display: flex;
+        justify-content: space-around;
+    }
+    .textAtencao{
+        color: var(--cinzaescuro);
+    }
+    .paralax_text > h1{
+        color: var(--cinzaclaro);
+        padding-bottom: 50px;
+    }
+    .paralax_text{
+        max-width: 300px;
+        text-align: left;
+    }
+    .paralax_text > p{
+         color: var(--cinzaclaro);
+    }
+    .paralax div{
+        width: 50%;
+    }
+}
 
 /*-----------------------------------rodapé-----------------------------------*/
 #lastSection p{
