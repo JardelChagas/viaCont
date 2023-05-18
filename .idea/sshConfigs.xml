@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="br992.hostgator.com.br" id="e22a8890-174d-4176-99f4-7f9eb53defdd" port="21" nameFormat="DESCRIPTIVE" username="gitAccount@viaconte.com.br" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</project>

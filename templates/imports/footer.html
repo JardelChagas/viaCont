@@ -1,0 +1,127 @@
+<footer>
+    <section class="secIfor">
+        <div class="container">
+            <div class="row">
+                <div class="" id="foot_mais_infor">
+                    <div>
+                        <h2>Precisa de mais informações?</h2>
+                        <p>Estamos aqui para ajuda-lo. Entre em contato por telefone, email ou redes sociais</p>
+                    </div>
+                    <div class="redes_sociais">
+                        <div class="incons_sociais">
+                            <a href="https://www.instagram.com/viaconte.contabilidade/" target="_blank">
+                                <i class='bx bxl-instagram-alt'></i>
+                            </a>
+                        </div>
+                        <div class="incons_sociais">
+                            <a href="https://www.facebook.com/olsgestaocontabil" target="_blank">
+                                <i class='bx bxl-facebook-square'></i>
+                            </a>
+                        </div>
+                        <div class="incons_sociais">
+                            <a href="#" target="_blank">
+                                <i class='bx bxs-phone'>(88) 3411-3999</i>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="logo_footer">
+                        <img src="../../static/images/logo.png">
+                    </div>
+                </div>
+                <div id="entre_contato" class="col-sm bloks">
+                    <form action="" method="post">
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                   placeholder="digite seu email" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" name="assunto" class="form-control" id="exampleFormControlInput2"
+                                   placeholder="Assunto">
+                        </div>
+                        <div class="mb-3">
+                        <textarea name="texto" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                  placeholder="deixe aqui sua mensagem"></textarea>
+                        </div>
+                        <button  onclick="enviarEmail()" id="btnSendEmail" type="submit" class="btn btn-dark">Enviar</button>
+</form>
+                </div>
+                <div class="col-sm bloks mapouter">
+                    <div class="gmap_canvas">
+                        <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                                src="https://maps.google.com/maps?width=450&amp;height=300&amp;hl=en&amp;q=morada nova ce, centro &amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                        <a href="https://www.kokagames.com/fnf-friday-night-funkin-mods/">FNF</a></div>
+                    <style>.mapouter {
+                        position: relative;
+                        text-align: right;
+                        width: 450px;
+                        height: 300px;
+                    }
+
+                    .gmap_canvas {
+                        overflow: hidden;
+                        background: none !important;
+                        width: 450px;
+                        height: 300px;
+                    }
+
+                    .gmap_iframe {
+                        width: 450px !important;
+                        height: 300px !important;
+                    }</style>
+                    <div id="foot_end">
+                        <p>
+                            Rua Padre Raul vieira, 150, APT 01, Centro Russas-CE, CEP 62900-000.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="lastSection">
+        <p>OSCAR L DA SILVA NETO ME - CNPJ 18481.798/0001-04 | &copy; ViaConte. 2022 - Todos os
+            direitos reservaods</p>
+        <p>Rua Padre Raul Vieira, 150, APT 01, Centro, em Russas-CE, Cep 62900-000</p>
+    </section>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+    /*document.getElementById("btnSendEmail").addEventListener("click", enviarEmail);*/
+    function enviarEmail() {
+        Swal.fire({
+            icon: 'success',
+            title: 'Email enviado com sucesso!',
+            /*text: 'Something went wrong!',
+            footer: '<a href="">Why do I have this issue?</a>'*/
+        });
+        $.getJSON('/sendEmail',
+                function(data) {
+              //do nothing
+            });
+        /**
+         Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+            footer: '<a href="">Why do I have this issue?</a>'
+        })
+         */
+    }
+</script>
+
+<script type=text/javascript>
+        $(function() {
+          $('buttonbtn#SendEmailt').on('click', function(e) {
+            e.preventDefault()
+            $.getJSON('/sendEmail   ',
+                function(data) {
+              //do nothing
+            });
+            return false;
+          });
+        });
+</script>

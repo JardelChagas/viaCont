@@ -1,0 +1,67 @@
+<header >
+    <div class="nav__logo">
+        <img class="logo" src="../../static/images/logo.png" alt="logo">
+    </div>
+    <div id="nav" class="nav__list" >
+        {% if(title=="ViaConte") %}
+            <a href="/" class="nav__link active-link ">
+                <span class="icon"><i class='bx bxs-home ' title="home" alt="home"></i></span>
+                <span class="nav__name">HOME</span>
+            </a>
+        {% else %}
+            <a href="/" class="nav__link ">
+                 <span class="icon"><i class='bx bxs-home' title="home" alt="home"></i></span>
+                <span class="nav__name ">HOME</span>
+            </a>
+        {% endif %}
+
+        {% if(title=="Quem somos") %}
+            <a href="/quemsomos" class="nav__link active-link">
+                 <span class="icon"><i class='bx bxs-group' title="Quem somos" alt="Quem somos"></i></span>
+                <span class="nav__name ">QUEM SOMOS</span>
+            </a>
+        {% else %}
+            <a href="/quemsomos" class="nav__link">
+                 <span class="icon"><i class='bx bxs-group' title="Quem somos" alt="Quem somos"></i></span>
+                <span class="nav__name ">QUEM SOMOS</span>
+            </a>
+        {% endif %}
+
+        {% if(title=="Serviços") %}
+            <a href="/servicos" class="nav__link active-link">
+                 <span class="icon"><i class='bx bxs-cog' title="Serviços" alt="Serviços"></i></span>
+                <span class="nav__name ">SERVIÇOS</span>
+            </a>
+        {% else %}
+            <a href="/servicos" class="nav__link">
+                 <span class="icon"><i class='bx bxs-cog' title="Serviços" alt="Serviços"></i></span>
+                <span class="nav__name ">SERVIÇOS</span>
+            </a>
+        {% endif %}
+
+        {% if(title=="Blog") %}
+            <a href="/blog" class="nav__link active-link">
+                 <span class="icon"><i class='bx bxs-spreadsheet' title="Blog" alt="Blog"></i></span>
+                <span class="nav__name ">BLOG</span>
+            </a>
+        {% else %}
+            <a href="/blog" class="nav__link">
+                 <span class="icon"><i class='bx bxs-spreadsheet' title="Blog" alt="Blog"></i></span>
+                <span class="nav__name ">BLOG</span>
+            </a>
+        {% endif %}
+
+        {% if(title=="Entre em contato") %}
+            <a href="/entreEmContato" class="nav__link active-link">
+                 <span class="icon"><i class='bx bxs-message-dots' title="Entre em contato" alt="Entre em contato"></i></span>
+                <span class="nav__name ">ENTRE EM CONTATO</span>
+            </a>
+        {% else %}
+            <a href="/entreEmContato" class="nav__link">
+                 <span class="icon"><i class='bx bxs-message-dots' title="Entre em contato" alt="Entre em contato"></i></span>
+                <span class="nav__name ">ENTRE EM CONTATO</span>
+            </a>
+        {% endif %}
+    </div>
+</header>
+
